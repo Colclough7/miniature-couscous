@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Inventory App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>INVENTORY</h1>
+        <form id="item-form">
+            <div>
+                <label for="Title">Item Description</label>
+                <input type="text" id="title" class="u-full-width">
+            </div>
+            <div>
+                <label for="cost">Cost</label>
+                <input type="text" id="cost" class="u-full-width">
+            </div>
+            <div>
+                <label for="onHand">On Hand</label>
+                <input type="number" id="onHand" class="u-full-width">
+            </div>
+            <div>
+                <label for="par">Par</label>
+                <input type="number" id="par" class="u-full-width">
+            </div>
+            <div>
+                <input type="submit" value="submit" class="u-full-width">
+            </div>
+        </form>
+        <table class="u-full-width">
+            <thead>
+                <th>ITEM DESCRIPTION</th>
+                <th>COST</th>
+                <th>ON HAND</th>
+                <th>PAR</th>
+                <th>ORDER</th>
+                <th>TOTAL</th>
+            </thead>
+            <tbody id="item-list"></tbody>
+        </table>
+    </div>
+</body>
+
+</html>
